@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title >Tommy-H Clothingline - Products</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f2f2f2;
+}
+nav{
+    background:#ffffff;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:20px;
+    color:#333;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#888;
+}
+
+.container{
+    padding:40px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:20px;
+}
+
+.product{
+    background:#ffffff;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    background:#ddd;
+}
+
+.product h3{
+    margin:10px 0;
+}
+
+.product p{
+    font-weight:bold;
+    color:#444;
+}
+
+.product button{
+    padding:8px 15px;
+    border:none;
+    background:#333;
+    color:white;
+    cursor:pointer;
+}
+
+.product button:hover{
+    background:#555;
+}
+.cart{
+    margin-top:40px;
+    background:#fff;
+    padding:20px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#fff;
+    color:#777;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">TOMMY STYLE SHOP</div>
+    <div>
+        <a href="home.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="products.html">All Products</a>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>All Products</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="grey.webp" alt="Product 1">
+            <h3>Grey Classic T-Shirt</h3>
+            <p>$25</p>
+            <button onclick="addToCart(25)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="tomm.webp" alt="Product 2">
+            <h3>White Minimal Tee</h3>
+            <p>$30</p>
+            <button onclick="addToCart(30)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="grs.jpg" alt="Product 3">
+            <h3>Urban Grey Shirt</h3>
+            <p>$28</p>
+            <button onclick="addToCart(28)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="cream.webp" alt="Product 4">
+            <h3>Signature Logo Tee</h3>
+            <p>$35</p>
+            <button onclick="addToCart(35)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="black.webp" alt="Product 5">
+            <h3>Modern Fit Shirt</h3>
+            <p>$27</p>
+            <button onclick="addToCart(27)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="pure.webp" alt="Product 6">
+            <h3>Premium Cotton Tee</h3>
+            <p>$32</p>
+            <button onclick="addToCart(32)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="je.jpg" alt="Product 7">
+            <h3>Casual Grey Shirt</h3>
+            <p>$29</p>
+            <button onclick="addToCart(29)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="jeramy.webp" alt="Product 8">
+            <h3>Classic White Tee</h3>
+            <p>$26</p>
+            <button onclick="addToCart(26)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="henb.webp" alt="Product 9">
+            <h3>Limited Edition Shirt</h3>
+            <p>$40</p>
+            <button onclick="addToCart(40)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="hilg.jpg" alt="Product 10">
+            <h3>Essential Basic Tee</h3>
+            <p>$24</p>
+            <button onclick="addToCart(24)">Add to Cart</button>
+        </div>
+
+    </div>
+    <div class="cart">
+        <h3>Shopping Cart</h3>
+        <p>Total Items: <span id="totalItems">0</span></p>
+        <p>Total Price: $<span id="totalPrice">0</span></p>
+    </div>
+
+</div>
+
+<footer>
+    © Tommy-H Clothingline 
+</footer>
+
+<script>
+let totalItems = 0;
+let totalPrice = 0;
+
+function addToCart(price){
+    totalItems++;
+    totalPrice += price;
+
+    document.getElementById("totalItems").innerText = totalItems;
+    document.getElementById("totalPrice").innerText = totalPrice;
+}
+</script>
+
+</body>
+</html>
