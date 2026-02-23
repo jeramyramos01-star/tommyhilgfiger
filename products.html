@@ -2,102 +2,181 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tommy Hilfiger - Shop</title>
+    <title>Tommy Hilfiger | Official Collection</title>
 </head>
-<body style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background: #ffffff; color: #00174f;">
+<body style="margin: 0; padding: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background: #ffffff; color: #1a1a1a;">
 
-    <nav style="background: #00174f; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 6px solid #ce1126;">
-        <div style="text-align: center; line-height: 1;">
-            <div style="font-size: 24px; font-weight: 900; letter-spacing: 4px; color: #fff; margin-bottom: 2px;">TOMMY</div>
-            <div style="font-size: 10px; font-weight: 400; letter-spacing: 6px; color: #fff; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 2px;">HILFIGER</div>
+    <div style="background: #ce1126; height: 4px; width: 100%;"></div>
+
+    <nav style="background: #00174f; padding: 20px 60px; display: flex; justify-content: space-between; align-items: center; border-bottom: 5px solid #ffffff;">
+        <div style="display: flex; align-items: center;">
+            <div style="width: 35px; height: 22px; display: flex; border: 1px solid #ffffff; margin-right: 15px;">
+                <div style="background: white; width: 50%; height: 100%;"></div>
+                <div style="background: #ce1126; width: 50%; height: 100%;"></div>
+            </div>
+            <div style="font-size: 22px; font-weight: 900; letter-spacing: 5px; color: #ffffff; text-transform: uppercase;">Tommy Hilfiger</div>
         </div>
         <div>
-            <a href="index.html" style="text-decoration: none; margin-left: 30px; color: #ffffff; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Home</a>
-            <a href="about.html" style="text-decoration: none; margin-left: 30px; color: #ffffff; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">About</a>
-            <a href="products.html" style="text-decoration: none; margin-left: 30px; color: #ffffff; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #ce1126; padding-bottom: 5px;">Shop All</a>
-            <a href="contact.html" style="text-decoration: none; margin-left: 30px; color: #ffffff; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Contact</a>
+            <a href="index.html" style="text-decoration: none; margin-left: 30px; color: #ffffff; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Home</a>
+            <a href="products.html" style="text-decoration: none; margin-left: 30px; color: #ffffff; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #ce1126; padding-bottom: 5px;">All Products</a>
+            <a href="contact.html" style="text-decoration: none; margin-left: 30px; color: #ffffff; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Contact</a>
         </div>
     </nav>
 
-    <div style="padding: 40px 60px; max-width: 1300px; margin: auto;">
+    <div style="max-width: 1300px; margin: auto; padding: 40px 60px;">
         
-        <div style="float: right; width: 280px; background: white; padding: 25px; border: 2px solid #00174f; margin-left: 30px; position: sticky; top: 20px;">
-            <h3 style="margin-top: 0; font-size: 18px; text-transform: uppercase; letter-spacing: 2px; border-bottom: 2px solid #ce1126; padding-bottom: 10px;">Your Bag</h3>
-            <p style="font-size: 14px;">Items: <span id="totalItems" style="font-weight: 700;">0</span></p>
-            <p style="font-size: 14px; margin-bottom: 20px;">Subtotal: <span style="font-weight: 700; color: #ce1126;">$<span id="totalPrice">0</span></span></p>
-            <a href="cart.html" style="display:block; text-align:center; margin-top:10px; padding:12px; background:#00174f; color:white; font-size:13px; font-weight:700; text-transform:uppercase; text-decoration:none; letter-spacing:1px;">View Bag</a>
-            <a href="cart.html" style="display:block; text-align:center; margin-top:10px; padding:12px; background:#ce1126; color:white; font-size:13px; font-weight:700; text-transform:uppercase; text-decoration:none; letter-spacing:1px;">Checkout</a>
+        <div style="margin-bottom: 60px; background: #f4f4f4; padding: 30px; border-left: 6px solid #00174f; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <h3 style="margin: 0; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: #00174f;">Your Shopping Bag</h3>
+                <p style="margin: 5px 0 0; font-size: 18px; font-weight: 300;">Items: <span id="totalItems" style="font-weight: 700;">0</span> | Total: <span style="color: #ce1126; font-weight: 700;">$<span id="totalPrice">0</span></span></p>
+            </div>
+            <div style="display: flex; gap: 15px;">
+                <a href="cart.html" style="padding: 12px 25px; background: #00174f; color: white; text-decoration: none; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">View Bag</a>
+                <a href="checkout.html" style="padding: 12px 25px; background: #ce1126; color: white; text-decoration: none; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Checkout</a>
+            </div>
         </div>
 
-        <div style="margin-right: 320px;">
-            <h2 style="font-weight: 900; text-transform: uppercase; letter-spacing: -1px; font-size: 32px; margin-bottom: 40px; border-left: 8px solid #ce1126; padding-left: 15px;">New Arrivals</h2>
+        <h2 style="font-size: 32px; font-weight: 300; letter-spacing: 8px; text-transform: uppercase; text-align: center; margin-bottom: 50px; color: #00174f;">The New Arrivals</h2>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 40px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 40px;">
 
-                <div style="background: white; text-align: left; transition: 0.3s;">
-                    <div style="position: relative; overflow: hidden; background: #f4f4f4; padding: 10px;">
-                        <img src="main/grey.webp" alt="Product 1" style="width: 100%; height: 350px; object-fit: cover; display: block;">
-                        <div style="position: absolute; top: 10px; left: 10px; background: #ce1126; color: white; padding: 5px 10px; font-size: 10px; font-weight: 800; text-transform: uppercase;">Essential</div>
-                    </div>
-                    <h3 style="margin: 15px 0 5px; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Grey Classic T-Shirt</h3>
-                    <p style="font-weight: 400; color: #00174f; font-size: 16px; margin: 0 0 15px;">$25.00</p>
-                    <button onclick="addToCart('Grey Classic T-Shirt', 25 )" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: transparent; color: #00174f; font-weight: 700; text-transform: uppercase; font-size: 12px; cursor: pointer; letter-spacing: 1px;">Add to Bag</button>
-                </div>
+            <div style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <img src="main/grey.webp" alt="P1" style="width: 100%; height: 350px; object-fit: cover; background: #f9fafb;">
+                <h3 style="font-size: 14px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px; letter-spacing: 1px;">Grey Classic T-Shirt</h3>
+                <p style="font-weight: 300; color: #ce1126; font-size: 18px; margin-bottom: 15px;">$25.00</p>
+                <button onclick="addToCart('Grey Classic T-Shirt', 25)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: white; color: #00174f; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; transition: 0.3s;">Add to Bag</button>
+            </div>
 
-                <div style="background: white; text-align: left;">
-                    <div style="background: #f4f4f4; padding: 10px;">
-                        <img src="main/tomm.webp" alt="Product 2" style="width: 100%; height: 350px; object-fit: cover;">
-                    </div>
-                    <h3 style="margin: 15px 0 5px; font-size: 14px; font-weight: 700; text-transform: uppercase;">White Minimal Tee</h3>
-                    <p style="font-weight: 400; color: #00174f; font-size: 16px; margin: 0 0 15px;">$30.00</p>
-                    <button onclick="addToCart('White Minimal Tee', 30)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: transparent; color: #00174f; font-weight: 700; text-transform: uppercase; font-size: 12px; cursor: pointer;">Add to Bag</button>
-                </div>
+            <div style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <img src="main/tomm.webp" alt="P2" style="width: 100%; height: 350px; object-fit: cover; background: #f9fafb;">
+                <h3 style="font-size: 14px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px; letter-spacing: 1px;">White Minimal Tee</h3>
+                <p style="font-weight: 300; color: #ce1126; font-size: 18px; margin-bottom: 15px;">$30.00</p>
+                <button onclick="addToCart('White Minimal Tee', 30)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: white; color: #00174f; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">Add to Bag</button>
+            </div>
 
-                <div style="background: white; text-align: left;">
-                    <div style="background: #f4f4f4; padding: 10px;">
-                        <img src="main/grs.jpg" alt="Product 3" style="width: 100%; height: 350px; object-fit: cover;">
-                    </div>
-                    <h3 style="margin: 15px 0 5px; font-size: 14px; font-weight: 700; text-transform: uppercase;">Urban Grey Shirt</h3>
-                    <p style="font-weight: 400; color: #00174f; font-size: 16px; margin: 0 0 15px;">$28.00</p>
-                    <button onclick="addToCart('Urban Grey Shirt', 28)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: transparent; color: #00174f; font-weight: 700; text-transform: uppercase; font-size: 12px; cursor: pointer;">Add to Bag</button>
-                </div>
+            <div style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <img src="main/grs.jpg" alt="P3" style="width: 100%; height: 350px; object-fit: cover; background: #f9fafb;">
+                <h3 style="font-size: 14px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px; letter-spacing: 1px;">Urban Grey Shirt</h3>
+                <p style="font-weight: 300; color: #ce1126; font-size: 18px; margin-bottom: 15px;">$28.00</p>
+                <button onclick="addToCart('Urban Grey Shirt', 28)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: white; color: #00174f; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">Add to Bag</button>
+            </div>
 
-                <div style="background: white; text-align: left;">
-                    <div style="background: #f4f4f4; padding: 10px;">
-                        <img src="main/cream.webp" alt="Product 4" style="width: 100%; height: 350px; object-fit: cover;">
-                    </div>
-                    <h3 style="margin: 15px 0 5px; font-size: 14px; font-weight: 700; text-transform: uppercase;">Signature Logo Tee</h3>
-                    <p style="font-weight: 400; color: #00174f; font-size: 16px; margin: 0 0 15px;">$35.00</p>
-                    <button onclick="addToCart('Signature Logo Tee', 35)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: transparent; color: #00174f; font-weight: 700; text-transform: uppercase; font-size: 12px; cursor: pointer;">Add to Bag</button>
-                </div>
+            <div style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <img src="main/cream.webp" alt="P4" style="width: 100%; height: 350px; object-fit: cover; background: #f9fafb;">
+                <h3 style="font-size: 14px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px; letter-spacing: 1px;">Signature Logo Tee</h3>
+                <p style="font-weight: 300; color: #ce1126; font-size: 18px; margin-bottom: 15px;">$35.00</p>
+                <button onclick="addToCart('Signature Logo Tee', 35)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: white; color: #00174f; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">Add to Bag</button>
+            </div>
 
-                </div>
+            <div style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <img src="main/black.webp" alt="P5" style="width: 100%; height: 350px; object-fit: cover; background: #f9fafb;">
+                <h3 style="font-size: 14px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px; letter-spacing: 1px;">Modern Fit Shirt</h3>
+                <p style="font-weight: 300; color: #ce1126; font-size: 18px; margin-bottom: 15px;">$27.00</p>
+                <button onclick="addToCart('Modern Fit Shirt', 27)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: white; color: #00174f; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">Add to Bag</button>
+            </div>
+
+            <div style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <img src="main/pure.webp" alt="P6" style="width: 100%; height: 350px; object-fit: cover; background: #f9fafb;">
+                <h3 style="font-size: 14px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px; letter-spacing: 1px;">Premium Cotton Tee</h3>
+                <p style="font-weight: 300; color: #ce1126; font-size: 18px; margin-bottom: 15px;">$32.00</p>
+                <button onclick="addToCart('Premium Cotton Tee', 32)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: white; color: #00174f; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">Add to Bag</button>
+            </div>
+
+            <div style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <img src="main/je.jpg" alt="P7" style="width: 100%; height: 350px; object-fit: cover; background: #f9fafb;">
+                <h3 style="font-size: 14px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px; letter-spacing: 1px;">Casual Grey Shirt</h3>
+                <p style="font-weight: 300; color: #ce1126; font-size: 18px; margin-bottom: 15px;">$32.00</p>
+                <button onclick="addToCart('Casual Grey Shirt', 32)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: white; color: #00174f; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">Add to Bag</button>
+            </div>
+
+            <div style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <img src="main/jeramy.webp" alt="P8" style="width: 100%; height: 350px; object-fit: cover; background: #f9fafb;">
+                <h3 style="font-size: 14px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px; letter-spacing: 1px;">Classic White Tommy</h3>
+                <p style="font-weight: 300; color: #ce1126; font-size: 18px; margin-bottom: 15px;">$32.00</p>
+                <button onclick="addToCart('Classic White Tommy', 32)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: white; color: #00174f; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">Add to Bag</button>
+            </div>
+
+            <div style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <img src="main/henb.webp" alt="P9" style="width: 100%; height: 350px; object-fit: cover; background: #f9fafb;">
+                <h3 style="font-size: 14px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px; letter-spacing: 1px;">Edition Hilfiger</h3>
+                <p style="font-weight: 300; color: #ce1126; font-size: 18px; margin-bottom: 15px;">$32.00</p>
+                <button onclick="addToCart('Edition Hilfiger', 32)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: white; color: #00174f; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">Add to Bag</button>
+            </div>
+
+            <div style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <img src="main/hilg.jpg" alt="P10" style="width: 100%; height: 350px; object-fit: cover; background: #f9fafb;">
+                <h3 style="font-size: 14px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px; letter-spacing: 1px;">Essential Hilfiger</h3>
+                <p style="font-weight: 300; color: #ce1126; font-size: 18px; margin-bottom: 15px;">$32.00</p>
+                <button onclick="addToCart('Essential Hilfiger', 32)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: white; color: #00174f; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">Add to Bag</button>
+            </div>
+
+            <div style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <img src="main/wats2.webp" alt="P11" style="width: 100%; height: 350px; object-fit: cover; background: #f9fafb;">
+                <h3 style="font-size: 14px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px; letter-spacing: 1px;">Watch Essential</h3>
+                <p style="font-weight: 300; color: #ce1126; font-size: 18px; margin-bottom: 15px;">$120.00</p>
+                <button onclick="addToCart('Watch Essential', 120)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: white; color: #00174f; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">Add to Bag</button>
+            </div>
+
+            <div style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <img src="main/wats.jfif" alt="P12" style="width: 100%; height: 350px; object-fit: cover; background: #f9fafb;">
+                <h3 style="font-size: 14px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px; letter-spacing: 1px;">Tommy Silver Watch</h3>
+                <p style="font-weight: 300; color: #ce1126; font-size: 18px; margin-bottom: 15px;">$145.00</p>
+                <button onclick="addToCart('Tommy Silver Watch', 145)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: white; color: #00174f; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">Add to Bag</button>
+            </div>
+
+            <div style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <img src="main/shu.jpg" alt="P13" style="width: 100%; height: 350px; object-fit: cover; background: #f9fafb;">
+                <h3 style="font-size: 14px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px; letter-spacing: 1px;">Leather Essential Shoe</h3>
+                <p style="font-weight: 300; color: #ce1126; font-size: 18px; margin-bottom: 15px;">$85.00</p>
+                <button onclick="addToCart('Leather Essential Shoe', 85)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: white; color: #00174f; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">Add to Bag</button>
+            </div>
+
+            <div style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <img src="main/bref.jfif" alt="P14" style="width: 100%; height: 350px; object-fit: cover; background: #f9fafb;">
+                <h3 style="font-size: 14px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px; letter-spacing: 1px;">Signature Brief Pack</h3>
+                <p style="font-weight: 300; color: #ce1126; font-size: 18px; margin-bottom: 15px;">$40.00</p>
+                <button onclick="addToCart('Signature Brief Pack', 40)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: white; color: #00174f; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">Add to Bag</button>
+            </div>
+
+            <div style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <img src="main/3214406_1.webp" alt="P15" style="width: 100%; height: 350px; object-fit: cover; background: #f9fafb;">
+                <h3 style="font-size: 14px; font-weight: 700; text-transform: uppercase; margin: 20px 0 10px; letter-spacing: 1px;">Classic Chino Hilfiger</h3>
+                <p style="font-weight: 300; color: #ce1126; font-size: 18px; margin-bottom: 15px;">$75.00</p>
+                <button onclick="addToCart('Classic Chino Hilfiger', 75)" style="width: 100%; padding: 12px; border: 1.5px solid #00174f; background: white; color: #00174f; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">Add to Bag</button>
+            </div>
+
         </div>
     </div>
 
-    <footer style="text-align: center; padding: 60px 20px; background: #00174f; color: #ffffff; margin-top: 80px; border-top: 10px solid #ce1126;">
-        <div style="font-size: 20px; font-weight: 900; letter-spacing: 3px; margin-bottom: 10px;">TOMMY HILFIGER</div>
-        <p style="font-size: 12px; opacity: 0.7; letter-spacing: 1px;">© 2026 TOMMY HILFIGER LICENSING LLC. ALL RIGHTS RESERVED.</p>
+    <footer style="text-align: center; padding: 60px 20px; background: #00174f; color: #ffffff; border-top: 5px solid #ce1126;">
+        <div style="font-size: 20px; font-weight: 900; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 15px;">Tommy Hilfiger</div>
+        <div style="font-size: 11px; opacity: 0.6; text-transform: uppercase; letter-spacing: 2px;">&copy; 2026 Tommy Hilfiger Licensing LLC. All rights reserved.</div>
     </footer>
 
     <script>
-    function addToCart(name, price) {
-        let cart = JSON.parse(localStorage.getItem("cart")) || [];
-        cart.push({ name: name, price: price });
-        localStorage.setItem("cart", JSON.stringify(cart));
+        function addToCart(name, price) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.push({ name: name, price: price });
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let totalItems = cart.length;
+            let totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
+            
+            // Check if elements exist before updating
+            if(document.getElementById("totalItems")) {
+                document.getElementById("totalItems").innerText = totalItems;
+            }
+            if(document.getElementById("totalPrice")) {
+                document.getElementById("totalPrice").innerText = totalPrice;
+            }
+        }
+
+        // Initialize UI on load
         updateCartUI();
-    }
-
-    function updateCartUI() {
-        let cart = JSON.parse(localStorage.getItem("cart")) || [];
-        let totalItems = cart.length;
-        let totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
-        document.getElementById("totalItems").innerText = totalItems;
-        document.getElementById("totalPrice").innerText = totalPrice;
-    }
-
-    updateCartUI();
     </script>
-
 </body>
 </html>
