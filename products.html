@@ -164,9 +164,7 @@
         function updateCartUI() {
             let cart = JSON.parse(localStorage.getItem("cart")) || [];
             let totalItems = cart.length;
-            let totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
-            
-            // Check if elements exist before updating
+            let totalPrice = cart.reduce((sum, item) => sum + item.price, 0
             if(document.getElementById("totalItems")) {
                 document.getElementById("totalItems").innerText = totalItems;
             }
