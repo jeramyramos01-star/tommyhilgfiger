@@ -1,110 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Tommy-H Clothingline</title>
+  <meta charset="UTF-8">
+  <title>Tommy Hilfiger | Heritage</title>
+</head>
+<body style="margin:0; padding:0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #ffffff; color: #1a1a1a;">
 
+  <nav style="display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background-color: #ffffff; border-bottom: 1px solid #eeeeee; position: sticky; top: 0; z-index: 1000;">
     
-<body>
-
-<nav>
-    <div class="logo">
-        <img src="main/tommy2.jpg">
+    <div onclick="location.reload()" style="cursor: pointer; text-align: center;">
+      <div style="width: 35px; height: 22px; display: flex; border: 1px solid #ddd; margin: 0 auto;">
+        <div style="background: white; width: 50%; height: 100%;"></div>
+        <div style="background: #ce1126; width: 50%; height: 100%;"></div>
+      </div>
+      <div style="font-weight: 900; letter-spacing: 4px; text-transform: uppercase; font-size: 14px; margin-top: 5px; color: #00174f;">Tommy Hilfiger</div>
     </div>
-
     
-   
-</nav>
-
-<section class="hero">
     <div>
-
-        <h1 fontstyle="font-family" ><b>WELCOME!</b></h1>
-     
-        <a href="products.html">
-            <button>Shop Now</button>
-            
-        </a>
+      <a href="login.html" style="text-decoration: none;">
+        <button style="background: transparent; border: 2px solid #00174f; color: #00174f; padding: 8px 24px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; margin-right: 10px;">Login</button>
+      </a>
+      <a href="register.html" style="text-decoration: none;">
+        <button style="background: #00174f; border: 2px solid #00174f; color: #ffffff; padding: 8px 24px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">Register</button>
+      </a>
     </div>
-</section>
+  </nav>
 
-<footer>
-    © 2026 TOMMY HILGFIGER
-</footer>
+  <section style="background-color: #00174f; height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: #ffffff; border-bottom: 10px solid #ce1126;">
+    <h1 style="font-size: 4rem; font-weight: 300; letter-spacing: 12px; text-transform: uppercase; margin: 0;">Americana</h1>
+    <p style="font-size: 1.1rem; letter-spacing: 5px; text-transform: uppercase; margin: 20px 0 40px; opacity: 0.8;">Est. 1985 | Classic Cool</p>
+    <button onclick="checkAccount()" style="background: #ffffff; color: #00174f; border: none; padding: 18px 50px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; cursor: pointer;">Shop The Collection</button>
+  </section>
+
+  <div style="max-width: 1200px; margin: 80px auto; padding: 0 20px;">
+    <div style="text-align: center; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; text-transform: uppercase; letter-spacing: 6px; color: #00174f; border-bottom: 3px solid #ce1126; display: inline-block; padding-bottom: 10px;">New Arrivals</h2>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+      
+      <div style="flex: 1; min-width: 300px; max-width: 350px; text-align: center;">
+        <div style="background: #f6f6f6; margin-bottom: 20px;">
+          <img src="main/grs.jpg" alt="Urban Grey Shirt" style="width: 100%; height: 400px; object-fit: cover; display: block;">
+        </div>
+        <h3 style="font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; color: #00174f; margin: 10px 0;">Urban Grey Shirt</h3>
+        <p style="color: #ce1126; font-weight: bold; font-size: 1.2rem; margin-bottom: 20px;">$28.00</p>
+        <button onclick="addToCart(28)" style="width: 100%; padding: 15px; background: white; color: #00174f; border: 1px solid #00174f; font-weight: bold; text-transform: uppercase; cursor: pointer;">Add To Bag</button>
+      </div>
+
+      <div style="flex: 1; min-width: 300px; max-width: 350px; text-align: center;">
+        <div style="background: #f6f6f6; margin-bottom: 20px;">
+          <img src="main/cream.webp" alt="Signature Logo Tee" style="width: 100%; height: 400px; object-fit: cover; display: block;">
+        </div>
+        <h3 style="font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; color: #00174f; margin: 10px 0;">Signature Logo Tee</h3>
+        <p style="color: #ce1126; font-weight: bold; font-size: 1.2rem; margin-bottom: 20px;">$35.00</p>
+        <button onclick="addToCart(35)" style="width: 100%; padding: 15px; background: white; color: #00174f; border: 1px solid #00174f; font-weight: bold; text-transform: uppercase; cursor: pointer;">Add To Bag</button>
+      </div>
+
+      <div style="flex: 1; min-width: 300px; max-width: 350px; text-align: center;">
+        <div style="background: #f6f6f6; margin-bottom: 20px;">
+          <img src="main/black.webp" alt="Modern Fit Shirt" style="width: 100%; height: 400px; object-fit: cover; display: block;">
+        </div>
+        <h3 style="font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; color: #00174f; margin: 10px 0;">Modern Fit Shirt</h3>
+        <p style="color: #ce1126; font-weight: bold; font-size: 1.2rem; margin-bottom: 20px;">$27.00</p>
+        <button onclick="addToCart(27)" style="width: 100%; padding: 15px; background: white; color: #00174f; border: 1px solid #00174f; font-weight: bold; text-transform: uppercase; cursor: pointer;">Add To Bag</button>
+      </div>
+
+    </div>
+  </div>
+
+  <footer style="background-color: #00174f; color: #ffffff; text-align: center; padding: 50px 20px; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;">
+    &copy; 2026 TOMMY HILFIGER LICENSING LLC. ALL RIGHTS RESERVED.
+  </footer>
+
+  <script>
+    function addToCart(price) {
+      alert('Added to cart: $' + price);
+    }
+
+    function checkAccount() {
+      if(localStorage.getItem("userLoggedIn") === "true") {
+        window.location.href = "products.html";
+      } else {
+        alert("Please login or register to explore the collection.");
+        window.location.href = "login.html";
+      }
+    }
+  </script>
 
 </body>
-<style>
-        body{
-            margin:0;
-            font-family:Arial, Helvetica, sans-serif;
-            background:#f1f1f1;
-        }
-
-        nav{
-            background:#ffffff;
-            padding:15px 50px;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            box-shadow:0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .logo img{
-            height:50px;
-            width:auto;
-        }
-
-        nav a{
-            text-decoration:none;
-            margin-left:20px;
-            color:#000000;
-            font-weight:bold;
-        }
-
-        nav a:hover{
-            color:#000000;
-        }
-
-        .hero{
-            height:80vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            text-align:center;
-            background:linear-gradient(to right,#ffffff,#f10000);
-        }
-
-        .hero h1{
-            font-size:40px;
-            margin-bottom:20px;
-        }
-
-        .hero p{
-            color:#666;
-            margin-bottom:20px;
-        }
-
-        .hero button{
-            padding:12px 25px;
-            border:none;
-            background:#333;
-            color:white;
-            cursor:pointer;
-        }
-
-        .hero button:hover{
-            background:#555;
-        }
-
-        footer{
-            text-align:center;
-            padding:20px;
-            background:#fff;
-            color:#777;
-        }
-    </style>
-</head>
-
-
-
 </html>
